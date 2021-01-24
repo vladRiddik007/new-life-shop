@@ -45,7 +45,7 @@ export default function MediaCard({ item }) {
             height: 144,
           }}
         >
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom component="p">
             {item.name}
           </Typography>
           <div>
