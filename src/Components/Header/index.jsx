@@ -36,7 +36,7 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
           <Drawer />
           <Typography variant="h6" className={classes.title}>
@@ -69,9 +69,6 @@ export default function Header() {
             >
               <MenuItem onClick={handleClose}>
                 <Link to={`${process.env.PUBLIC_URL}`}>Home</Link>
-              </MenuItem>
-              <MenuItem onClick={handleClose}>
-                <Link to="/products">Products</Link>
               </MenuItem>
             </Menu>
           </div>

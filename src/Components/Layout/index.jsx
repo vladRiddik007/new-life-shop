@@ -15,7 +15,7 @@ const Layout = () => {
       {/* <HashRouter basename="/"> */}
       <div className="app">
         <Header />
-        <main className="main">
+        <main className="main" style={{ marginTop: 100 }}>
           <Suspense fallback={<p>Loading ...</p>}>
             <Switch>
               <Route exact path="/" component={MainPage} />
