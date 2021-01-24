@@ -7,15 +7,12 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
-import InboxIcon from '@material-ui/icons/MoveToInbox'
-import MailIcon from '@material-ui/icons/Mail'
 import MenuIcon from '@material-ui/icons/Menu'
 import Collapse from '@material-ui/core/Collapse'
 import ExpandLess from '@material-ui/icons/ExpandLess'
 import ExpandMore from '@material-ui/icons/ExpandMore'
-import StarBorder from '@material-ui/icons/StarBorder'
 import { data } from '../../data'
-import AdjustIcon from '@material-ui/icons/Adjust'
+import EcoIcon from '@material-ui/icons/Eco'
 
 const useStyles = makeStyles((theme) => ({
   list: {
@@ -37,7 +34,7 @@ export const SubCategory = ({ categoryName, subcategory }) => {
     <>
       <ListItem button onClick={handleClick}>
         <ListItemIcon>
-          <AdjustIcon />
+          <EcoIcon style={{ color: 'green' }} />
         </ListItemIcon>
         <ListItemText primary={categoryName} />
         {open ? <ExpandLess /> : <ExpandMore />}
@@ -55,7 +52,7 @@ export const SubCategory = ({ categoryName, subcategory }) => {
               }}
             >
               <ListItemIcon>
-                <StarBorder />
+                <EcoIcon style={{ color: 'green' }} />
               </ListItemIcon>
               <ListItemText primary={subcategory.subcategoryName} />
             </ListItem>
@@ -100,7 +97,7 @@ const Drawer = () => {
                 }}
               >
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  <EcoIcon style={{ color: 'green' }} />
                 </ListItemIcon>
                 <ListItemText primary={category.category} />
               </ListItem>

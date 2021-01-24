@@ -1,3 +1,4 @@
+import { LinearProgress } from '@material-ui/core'
 import React from 'react'
 import { Suspense, lazy } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
@@ -12,11 +13,10 @@ const ProductPage = lazy(() => import('../../Pages/ProductPage'))
 const Layout = () => {
   return (
     <div className="root">
-      {/* <HashRouter basename="/"> */}
       <div className="app">
         <Header />
-        <main className="main" style={{ marginTop: 100 }}>
-          <Suspense fallback={<p>Loading ...</p>}>
+        <main className="main" style={{ marginTop: 64, minHeight: 'calc(100vh - 57px)' }}>
+          <Suspense fallback={<LinearProgress />}>
             <Switch>
               <Route exact path="/" component={MainPage} />
               <Route exact path="/product/:id" component={ProductPage} />
@@ -27,7 +27,6 @@ const Layout = () => {
         </main>
         <Footer />
       </div>
-      {/* </HashRouter> */}
     </div>
   )
 }

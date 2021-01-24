@@ -6,8 +6,9 @@ import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
 import { Link } from 'react-router-dom'
+import { Button } from '@material-ui/core'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     width: 250,
     textDecoration: 'none',
@@ -17,7 +18,11 @@ const useStyles = makeStyles({
     backgroundSize: 'contain',
     height: 200,
   },
-})
+  button: {
+    margin: theme.spacing(1),
+    backgroundColor: 'green',
+  },
+}))
 
 export default function MediaCard({ item }) {
   const classes = useStyles()
@@ -42,7 +47,7 @@ export default function MediaCard({ item }) {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            height: 144,
+            height: 200,
           }}
         >
           <Typography gutterBottom component="p">
@@ -56,6 +61,17 @@ export default function MediaCard({ item }) {
               Oбъем {item.volume} ml
             </Typography>
           </div>
+          <Button
+            target="_blanck"
+            variant="contained"
+            href="https://instagram.com/newlifeshop.ua?igshid=1p8yofmysj8uk"
+            className={classes.button}
+            onClick={(event) => {
+              event.stopPropagation()
+            }}
+          >
+            Заказать
+          </Button>
         </CardContent>
       </CardActionArea>
     </Card>

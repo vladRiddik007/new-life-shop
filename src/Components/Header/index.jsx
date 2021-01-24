@@ -1,15 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  IconButton,
-  MenuItem,
-  Menu,
-} from '@material-ui/core'
-import AccountCircle from '@material-ui/icons/AccountCircle'
+import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import Drawer from '../Drawer'
 
 const useStyles = makeStyles(() => ({
@@ -23,54 +15,19 @@ const useStyles = makeStyles(() => ({
 
 export default function Header() {
   const classes = useStyles()
-  const [anchorEl, setAnchorEl] = React.useState(null)
-  const open = Boolean(anchorEl)
-
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget)
-  }
-
-  const handleClose = () => {
-    setAnchorEl(null)
-  }
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" style={{ backgroundColor: 'green' }}>
         <Toolbar>
           <Drawer />
           <Typography variant="h6" className={classes.title}>
-            Натуральна продукція
+            New Life Shop
           </Typography>
           <div>
-            <IconButton
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleMenu}
-              color="inherit"
-            >
-              <AccountCircle />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorEl}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={open}
-              onClose={handleClose}
-            >
-              <MenuItem onClick={handleClose}>
-                <Link to={`${process.env.PUBLIC_URL}`}>Home</Link>
-              </MenuItem>
-            </Menu>
+            <Link to={`/`} style={{ textDecoration: 'none', color: 'white' }}>
+              Главная
+            </Link>
           </div>
         </Toolbar>
       </AppBar>

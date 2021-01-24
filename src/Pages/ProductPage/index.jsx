@@ -40,13 +40,22 @@ const ProductPage = (props) => {
             Oбъем {item.volume} ml
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Описание: {item.description}
+            <span style={{ fontSize: 20, color: 'rgba(0, 0, 0, 0.87)' }}>
+              Описание:
+            </span>
+            {item.description}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Состав: {item.structure}
+            <span style={{ fontSize: 20, color: 'rgba(0, 0, 0, 0.87)' }}>
+              Cостав:
+            </span>
+            С {item.structure}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Рекомендации: {item.recommendations}
+            <span style={{ fontSize: 20, color: 'rgba(0, 0, 0, 0.87)' }}>
+              Рекомендации:
+            </span>
+            {item.recommendations}
           </Typography>
         </CardContent>
       </CardActionArea>

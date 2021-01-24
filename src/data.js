@@ -633,7 +633,7 @@ export const data = [
     ],
   },
   {
-    id: 'sd98f7d08hf0hv4g545g457u76h8jg09jk09',
+    id: 'sd98f7d08hf0hv4g545g457udfg76h8jg09jk09',
     category: 'Косметика',
     products: [
       {
@@ -884,7 +884,7 @@ export const data = [
     ],
   },
   {
-    id: 'sd98f7d08hf0hv4g545g457u76h8jg09jk09',
+    id: 'sd98f7d08hf0hv4g545g457u76hdfg8jg09jk09',
     category: 'Лицо',
     products: [
       {
