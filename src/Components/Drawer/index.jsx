@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export const SubCategory = ({ categoryName, subcategory }) => {
+export const SubCategory = ({ categoryName, subcategory, toggleDrawer }) => {
   const classes = useStyles()
   const [open, setOpen] = React.useState(false)
 
@@ -43,6 +43,7 @@ export const SubCategory = ({ categoryName, subcategory }) => {
         <List component="div" disablePadding>
           {subcategory.map((subcategory, i) => (
             <ListItem
+              onClick={toggleDrawer('left', false)}
               className={classes.nested}
               key={i}
               component={Link}
@@ -87,9 +88,11 @@ const Drawer = () => {
               <SubCategory
                 categoryName={category.category}
                 subcategory={category.subcategory}
+                toggleDrawer={toggleDrawer}
               />
             ) : (
               <ListItem
+                onClick={toggleDrawer('left', false)}
                 component={Link}
                 to={{
                   pathname: `/products/${category.category}`,
