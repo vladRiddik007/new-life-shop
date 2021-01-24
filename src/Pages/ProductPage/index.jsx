@@ -5,8 +5,9 @@ import CardActionArea from '@material-ui/core/CardActionArea'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
+import { Button } from '@material-ui/core'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     // width: 250,
     // textDecoration: 'none',
@@ -16,7 +17,12 @@ const useStyles = makeStyles({
     backgroundSize: 'contain',
     height: 400,
   },
-})
+  button: {
+    margin: theme.spacing(1),
+    backgroundColor: 'green',
+    color: 'white',
+  },
+}))
 
 const ProductPage = (props) => {
   const item = props.location.state.item
@@ -39,6 +45,17 @@ const ProductPage = (props) => {
           <Typography variant="body2" color="textSecondary" component="p">
             Oбъем {item.volume} ml
           </Typography>
+          <Button
+            target="_blanck"
+            variant="contained"
+            href="https://instagram.com/newlifeshop.ua?igshid=1p8yofmysj8uk"
+            className={classes.button}
+            onClick={(event) => {
+              event.stopPropagation()
+            }}
+          >
+            Заказать
+          </Button>
           <Typography variant="body2" color="textSecondary" component="p">
             <span style={{ fontSize: 20, color: 'rgba(0, 0, 0, 0.87)' }}>
               Описание:
