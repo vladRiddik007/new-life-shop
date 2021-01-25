@@ -35,7 +35,7 @@ const ProductPage = (props) => {
           image={`/img/${item.img}.jpeg`}
           title={item.name}
         />
-        <CardContent>
+        <CardContent style={{ textAlign: 'center' }}>
           <Typography gutterBottom variant="h5" component="h2">
             {item.name}
           </Typography>
@@ -56,19 +56,34 @@ const ProductPage = (props) => {
           >
             Заказать
           </Button>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            component="p"
+            align={'left'}
+          >
             <span style={{ fontSize: 20, color: 'rgba(0, 0, 0, 0.87)' }}>
               Описание:
             </span>
             {item.description}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            component="p"
+            align={'left'}
+          >
             <span style={{ fontSize: 20, color: 'rgba(0, 0, 0, 0.87)' }}>
               Cостав:
             </span>
             С {item.structure}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            component="p"
+            align={'left'}
+          >
             <span style={{ fontSize: 20, color: 'rgba(0, 0, 0, 0.87)' }}>
               Рекомендации:
             </span>

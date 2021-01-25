@@ -1,10 +1,10 @@
-import { LinearProgress } from '@material-ui/core'
 import React, { useEffect } from 'react'
 import { Suspense, lazy } from 'react'
 import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
 
 import Footer from '../Footer'
 import Header from '../Header'
+import { Loader } from '../Loader'
 import { RouterConfig } from './RouterConfig'
 
 const MainPage = lazy(() => import('../../Pages/MainPage'))
@@ -28,7 +28,7 @@ const Layout = () => {
         <Header />
         <ScrollToTop />
         <main className="main" style={{ marginTop: 64, minHeight: 'calc(100vh - 57px)' }}>
-          <Suspense fallback={<LinearProgress />}>
+          <Suspense fallback={<Loader />}>
             <Switch>
               <Route exact path={RouterConfig.mainPage} component={MainPage} />
               <Route exact path={RouterConfig.productPage} component={ProductPage} />

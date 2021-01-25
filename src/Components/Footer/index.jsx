@@ -40,6 +40,34 @@ const Footer = () => (
             </a>
           </Typography>
         </Grid>
+        <Grid item xs={12} sm={6} md={3}>
+          <Typography align={'center'} gutterBottom style={{ color: 'white' }}>
+            Доставка по Украине
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6} md={3}>
+          <Typography align={'center'} gutterBottom style={{ color: 'white' }}>
+            Отправка заказов ПН-ПТ, 09:00 - 18:00
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6} md={3}>
+          <div style={{ width: 130, margin: '0 auto' }}>
+            <img
+              src={`/Nova_Poshta_2014_logo.svg`}
+              alt="Nova Post"
+              style={{ width: '100%' }}
+            />
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={6} md={3}>
+          <div style={{ width: 130, margin: '0 auto' }}>
+            <img
+              src={`/Ukrposhta-ua.svg`}
+              alt="UKR POST"
+              style={{ width: '100%' }}
+            />
+          </div>
+        </Grid>
       </Grid>
       <Divider style={{ margin: '24px auto', backgroundColor: 'white' }} />
       <p

@@ -1,12 +1,14 @@
 import { Container } from '@material-ui/core'
 import React from 'react'
+import Slick from '../../Components/Slick'
 
 const MainPage = () => {
   return (
     <Container>
-      <div style={{ maxWidth: 400, paddingTop: 50, margin: '0 auto' }}>
+      <div style={{ maxWidth: 400, paddingTop: 50, paddingBottom: 50, margin: '0 auto' }}>
         <img src={`./logo.svg`} title="New Life" alt="New Life" />
       </div>
+      <Slick />
       <div style={{ padding: 20 }}>
         <div style={{ maxWidth: 600, margin: '0 auto', position: 'relative' }}>
           <img
@@ -19,7 +21,12 @@ const MainPage = () => {
             src={`./logo.svg`}
             title="New Life"
             alt="New Life"
-            style={{ position: 'absolute', maxWidth: 220, top: 60, right: 30 }}
+            style={{
+              position: 'absolute',
+              maxWidth: '35%',
+              top: 60,
+              right: 30,
+            }}
           />
         </div>
         <h3>Коты лечат</h3>
