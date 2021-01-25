@@ -42,15 +42,27 @@ const Footer = () => (
         </Grid>
       </Grid>
       <Divider style={{ margin: '24px auto', backgroundColor: 'white' }} />
+      <p
+        style={{
+          fontSize: 12,
+          textAlign: 'start',
+          color: 'white',
+          lineHeight: '13px',
+        }}
+      >
+        *Самолечение может навредить вашему здоровью! Перед любым приемом
+        препаратов необходимо ОБЯЗАТЕЛЬНО ознакомится с инструкцией и
+        проконсультироваться с Вашим лечащим врачом. Обязательно изучите
+        побочные эффекты, противопоказания и возможность индивидуальной
+        непереносимости препарата.
+      </p>
+      <Divider style={{ margin: '24px auto', backgroundColor: 'white' }} />
       <Typography variant="caption" align={'center'} style={{ color: 'white' }}>
         © Copyright 2021: NEW LIFE SHOP
       </Typography>
     </Container>
   </footer>
 )
-
-// https://instagram.com/newlifeshop.ua?igshid=1p8yofmysj8uk
-// https://new-life.com/uploads/price_list/399-22-012021-600a7fe7222d63.65153526.pdf
 
 Footer.propTypes = {}
 Footer.defaultProps = {}

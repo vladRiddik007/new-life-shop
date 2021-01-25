@@ -5,6 +5,7 @@ import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
 
 import Footer from '../Footer'
 import Header from '../Header'
+import { RouterConfig } from './RouterConfig'
 
 const MainPage = lazy(() => import('../../Pages/MainPage'))
 const ProductsPage = lazy(() => import('../../Pages/ProductsPage'))
@@ -29,9 +30,9 @@ const Layout = () => {
         <main className="main" style={{ marginTop: 64, minHeight: 'calc(100vh - 57px)' }}>
           <Suspense fallback={<LinearProgress />}>
             <Switch>
-              <Route exact path="/" component={MainPage} />
-              <Route exact path="/product/:id" component={ProductPage} />
-              <Route exact path="/products/:alias" component={ProductsPage} />
+              <Route exact path={RouterConfig.mainPage} component={MainPage} />
+              <Route exact path={RouterConfig.productPage} component={ProductPage} />
+              <Route exact path={RouterConfig.productsPage} component={ProductsPage} />
               <Redirect to="/404" />
             </Switch>
           </Suspense>
