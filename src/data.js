@@ -3359,13 +3359,23 @@ export const data = [
         subcategoryName: 'Диетические добавки',
         products: [
           {
-            name: 'COLLAGEN PRO 20 РАСТИТЕЛЬНЫХ КАПСУЛ В БЛИСТЕРАХ',
-            img: 'crem',
-            price: 165,
-            volume: '20 капсул по 500 mg',
+            name:
+              'GLUCOSAMINE + CHONDROITIN + MSM/ГЛЮКОЗАМИН + ХОНДРОИТИН + МСМ',
+            img: '',
+            price: 513,
+            volume: '60 капсул по 1150 mg',
             description: 'test',
             structure: 'test',
-            recommendations: 'test',
+            recommendations: 'по 1 таблетке 2 раза в день во время еды',
+          },
+          {
+            name: 'MULTIVITAMIN/МУЛЬТИВИТАМИН',
+            img: '',
+            price: 37,
+            volume: '60 капсул по 1000 mg',
+            description: 'test',
+            structure: 'test',
+            recommendations: 'по 1 таблетке 2 раза в день во время еды',
           },
         ],
       },
