@@ -10,6 +10,9 @@ import { RouterConfig } from './RouterConfig'
 const MainPage = lazy(() => import('../../Pages/MainPage'))
 const ProductsPage = lazy(() => import('../../Pages/ProductsPage'))
 const ProductPage = lazy(() => import('../../Pages/ProductPage'))
+const CheerPage = lazy(() => import('../../Pages/CheerPage'))
+const PaymentPage = lazy(() => import('../../Pages/PaymentPage'))
+const NewsPage = lazy(() => import('../../Pages/NewsPage'))
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -33,6 +36,9 @@ const Layout = () => {
               <Route exact path={RouterConfig.mainPage} component={MainPage} />
               <Route exact path={RouterConfig.productPage} component={ProductPage} />
               <Route exact path={RouterConfig.productsPage} component={ProductsPage} />
+              <Route exact path={RouterConfig.cheerPage} component={CheerPage} />
+              <Route exact path={RouterConfig.paymentPage} component={PaymentPage} />
+              <Route exact path={RouterConfig.newsPage} component={NewsPage} />
               <Redirect to="/404" />
             </Switch>
           </Suspense>
