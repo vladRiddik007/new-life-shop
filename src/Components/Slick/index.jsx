@@ -27,7 +27,7 @@ export default function Slick() {
       </div>
       <div>
         <img
-          src={`./slick.jpg`}
+          src={`./slick2.jpg`}
           title="New Life"
           alt="New Life"
           style={{ width: '100%', height: 'auto' }}

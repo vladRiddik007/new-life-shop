@@ -76,7 +76,7 @@ const ProductPage = (props) => {
             <span style={{ fontSize: 20, color: 'rgba(0, 0, 0, 0.87)' }}>
               Cостав:
             </span>
-            С {item.structure}
+            {item.structure}
           </Typography>
           <Typography
             variant="body2"

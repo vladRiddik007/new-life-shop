@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import Drawer from '../Drawer'
+import { RouterConfig } from '../Layout/RouterConfig'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
+import AdaptiveMenu from '../AdaptiveMenu'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -15,6 +18,7 @@ const useStyles = makeStyles(() => ({
 
 export default function Header() {
   const classes = useStyles()
+  const matches = useMediaQuery('(min-width:768px)')
 
   return (
     <div className={classes.root}>
@@ -24,11 +28,50 @@ export default function Header() {
           <Typography variant="h6" className={classes.title}>
             New Life Shop
           </Typography>
-          <div>
-            <Link to={`/`} style={{ textDecoration: 'none', color: 'white' }}>
-              Главная
-            </Link>
-          </div>
+          {matches ? (
+            <div>
+              <Link
+                to={RouterConfig.mainPage}
+                style={{
+                  textDecoration: 'none',
+                  color: 'white',
+                  marginRight: 20,
+                }}
+              >
+                Главная
+              </Link>
+              <Link
+                to={RouterConfig.cheerPage}
+                style={{
+                  textDecoration: 'none',
+                  color: 'white',
+                  marginRight: 20,
+                }}
+              >
+                За здоровье!
+              </Link>
+              <Link
+                to={RouterConfig.newsPage}
+                style={{
+                  textDecoration: 'none',
+                  color: 'white',
+                  marginRight: 20,
+                }}
+              >
+                Новости
+              </Link>
+              <Link
+                to={RouterConfig.paymentPage}
+                style={{
+                  textDecoration: 'none',
+                  color: 'white',
+                  marginRight: 20,
+                }}
+              >
+                Доставка и оплата
+              </Link>
+            </div>
+          ) : <AdaptiveMenu />}
         </Toolbar>
       </AppBar>
     </div>
