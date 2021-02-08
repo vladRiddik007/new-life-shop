@@ -1496,6 +1496,39 @@ export const data = [
     category: 'Волосы',
     products: [
       {
+        name: 'HAIR BALSAM 39 EKTRACTS',
+        img: 'HAIR BALSAM 39 EKTRACTS',
+        price: 185,
+        volume: 200,
+        description: `Насыщенная кремовая консистенция бальзама-ополаскивателя для волос на основе 
+        39 экстрактов заметно улучшает структуру волос, смягчает и делает их сияющими, эластичными и 
+        прочными. Средство обогащает волосы живительной влагой и активными компонентами. Оно избавляет
+         от сухости, ломкости и секущихся кончиков. Восстанавливает поврежденные волосы, делает их
+          послушными и улучшает расчесывание. Бальзам имеет приятный аромат эфирных масел и нежную 
+          консистенцию, которая равномерно распределяется на поверхности волос и легко смывается, 
+          оставляя свежесть и чистоту`,
+        structure: `aqua, cetearyl alcohol (and) dipalmitoylethyl hydroxyethylmonium methosulfate
+         (and) ceteareth-20, arctium lappa extract, elytrigia repens extract, amaranthus cruentus
+          extract, trifolium pratense (red clover) extract, calendula officinalis L. extract, 
+          betula extract, quercus robur bark extract, linum usitatissimum extract, polygonum 
+          aviculare extract, pinus extract, chamomilla recutita (matricaria) extract, hypericum 
+          perforatum (st. john's wort) extract, pelargonium peltatum extract, tilia cordata extract,
+           symphytum officinale extract, lavandula angustifolia extract, artemisia vulgaris 
+           (mugwort) extract, centaurea cyanus extract, vinca minor extract, eleutherococcus
+            extract, aloe arborescens extract, viburnum opulus extract, lilium (convallaria majalis)
+             extract, melissa officinalis extract, silybum marianum (milk thistle) extract, fragaria 
+             vesca (strawberry) extract, chelidonium majus extract, capsella extract, hydrolyzed viola
+              tricolor extract, plantago major extract, salvia officinalis extract, elettaria 
+              cardamomum (cardamom) extract, aesculus hippocastanum extract, cetraria islandica 
+              extract, pollen extract, juglans regia extract, rhodiola rosea root extract, syringa 
+              vulgaris (lilac) extract, helichrysum arenarium extract, cyclopentasiloxane, ceto 
+              stearyl alcohol, hydrolyzed keratin, hydrolyzed wheat protein, sodium hyaluronate
+               high-molecular, sodium hyaluronate low-molecular, tocopheryl acetate, simmondsia 
+               chinensis oil, cetrimonium chloride, polyquaternium - 7, melaleuca alternifolia oil, 
+               rosmarinus officinalis (rosemary) oil, citric acid, phenoxyethanol`,
+        recommendations: `нанести небольшое количество бальзама на волосы и распределить по всей длине`,
+      },
+      {
         name: 'МАСКА ОТ ВЫПАДЕНИЯ ВОЛОС 39 ЭКСТРАКТОВ',
         img: 'МАСКА ОТ ВЫПАДЕНИЯ ВОЛОС 39 ЭКСТРАКТОВ',
         price: 185,
@@ -2890,6 +2923,23 @@ export const data = [
             круговыми движениями утром и вечером не менее 3-х минут. Ополоснуть полость рта небольшим 
             количеством воды, задерживая ее на 20-30 секунд`,
           },
+          {
+            name: 'ЗУБНАЯ ЩЕТКА NEW LIFE',
+            img: 'ЗУБНАЯ ЩЕТКА NEW LIFE',
+            price: 55,
+            volume: ,
+            description: `зубная щетка с ультра мягкой щетиной разработана специально для 
+            деликатного очищения полости рта и защиты десен от повреждения. Компактная овальная 
+            головка обеспечивает доступ к дальним зубов. Тонкие щетинки глубоко проникают в 
+            труднодоступные места, удаляют налет в межзубных промежутках и оказывают мягкий массаж 
+            деснам. Эргономичная ручка обеспечивает комфорт при чистке зубов степень жесткости: 
+            мягкая`,
+            structure: `ручка: термопластичный полимер, щетина: нейлон
+            `,
+            recommendations: `небольшое количество зубной пасты нанести на зубную щетку. Чистить зубы 
+            круговыми движениями утром и вечером не менее 3-х минут. Ополоснуть полость рта небольшим 
+            количеством воды, задерживая ее на 20-30 секунд`,
+          },
         ],
       },
       {
@@ -4073,6 +4123,66 @@ export const data = [
             сосудов. Способствует усвоению кислорода клетками особенно при больших физических нагрузках, стрессах, хроническом кислородном голодании сердца, головного мозга.`,
             structure:
               'янтарная кислота, витаминный премикс 994, аскорбиновая кислота, МКЦ.',
+            recommendations: 'по 1 таблетке 2 раза в день за 10 минут до еды',
+          },
+          {
+            name: `ФИТО-ЗДОРОВЬЕ ФОРТЕ ДЛЯ ЗРЕНИЯ 60 ТАБЛЕТОК В БАНОЧКЕ   `,
+            img: ' ФИТО-ЗДОРОВЬЕ ФОРТЕ ДЛЯ ЗРЕНИЯ 60 ТАБЛЕТОК В БАНОЧКЕ',
+            price: 132,
+            volume: '60 таблеток по 500 mg.',
+            description: `ррекомендовано для улучшения остроты зрения, укрепления сосудистой сетки,
+             питания зрительного нерва. Предупреждает появление катаракты, снимает воспаления и 
+             раздражения глаз, нормализует кровообращение и внутриглазное давление`,
+            structure: `лчерники плоды/myrtilli fructus, очанки трава/euphrasia herba, 
+            гинкго-билоба лист/ginkgonis folium, календулы цветы/calendulae flos, шпината 
+            лист/spiniciae folium, облепихи плоды/hіppophaes rhamnoides fructus, розмарина 
+            трава/rosmarіnі herba, бархатцев цветы/tagetes flos, брусники лист/vіtіs-іdaeae folіa`,
+            recommendations: 'по 1 таблетке 2 раза в день за 10 минут до еды',
+          },
+          {
+            name: `ФИТО-ЗДОРОВЬЕ ФОРТЕ ДЛЯ ЗРЕНИЯ 20 ТАБЛЕТОК В БЛИСТЕРАХ   `,
+            img: ' ФИТО-ЗДОРОВЬЕ ФОРТЕ ДЛЯ ЗРЕНИЯ 20 ТАБЛЕТОК В БЛИСТЕРАХ',
+            price: 55,
+            volume: '20 таблеток по 500 mg.',
+            description: `рекомендовано для улучшения остроты зрения, укрепления сосудистой сетки, 
+            питания зрительного нерва. Предупреждает появление катаракты, снимает воспаления и 
+            раздражения глаз, нормализует кровообращение и внутриглазное давление`,
+            structure: `черники плоды/myrtilli fructus, очанки трава/euphrasia herba, гинкго-билоба
+             лист/ginkgonis folium, календулы цветы/calendulae flos, шпината лист/spiniciae folium,
+              облепихи плоды/hіppophaes rhamnoides fructus, розмарина трава/rosmarіnі herba, 
+              бархатцев цветы/tagetes flos, брусники лист/vіtіs-іdaeae folіa`,
+            recommendations: 'по 1 таблетке 2 раза в день за 10 минут до еды',
+          },
+          {
+            name: `ФИТО-ЗДОРОВЬЕ ФОРТЕ ДЛЯ ЩИТОВИДНОЙ ЖЕЛЕЗЫ 60 ТАБЛЕТОК В БАНОЧКЕ   `,
+            img: ' ФИТО-ЗДОРОВЬЕ ФОРТЕ ДЛЯ ЩИТОВИДНОЙ ЖЕЛЕЗЫ 60 ТАБЛЕТОК В БАНОЧКЕ',
+            price: 132,
+            volume: '60 таблеток по 500 mg.',
+            description: `рекомендовано как средство которое способствует улучшению работы 
+            щитовидной железы и нормализации обмена веществ, является естественным источником 
+            йода, выравнивает гормональный баланс, нейтрализует свободные радикалы и проявляет 
+            антипролиферативное действие`,
+            structure: `ламинарии слань/thalli laminariae, лапчатки белой корень/potentilla alba 
+            rhizomata, аронии черноплодной плоды/aroniae melanocarpae fructus, дурнишника 
+            трава/xanthium herba, грецкого ореха перепонки/juglans regia membranes, спорыша 
+            трава/polygoni avicularis herba, шиповника плоды/rozae fructus, крапивы трава/urticae 
+            herba`,
+            recommendations: 'по 1 таблетке 2 раза в день за 10 минут до еды',
+          },
+          {
+            name: `ФИТО-ЗДОРОВЬЕ ФОРТЕ ДЛЯ ЩИТОВИДНОЙ ЖЕЛЕЗЫ 20 ТАБЛЕТОК В БЛИСТЕРАХ   `,
+            img: ' ФИТО-ЗДОРОВЬЕ ФОРТЕ ДЛЯ ЩИТОВИДНОЙ ЖЕЛЕЗЫ 20 ТАБЛЕТОК В БЛИСТЕРАХ',
+            price: 55,
+            volume: '20 таблеток по 500 mg.',
+            description: `рекомендовано как средство которое способствует улучшению работы 
+            щитовидной железы и нормализации обмена веществ, является естественным источником 
+            йода, выравнивает гормональный баланс, нейтрализует свободные радикалы и проявляет 
+            антипролиферативное действие`,
+            structure: `ламинарии слань/thalli laminariae, лапчатки белой корень/potentilla alba 
+            rhizomata, аронии черноплодной плоды/aroniae melanocarpae fructus, дурнишника 
+            трава/xanthium herba, грецкого ореха перепонки/juglans regia membranes, спорыша 
+            трава/polygoni avicularis herba, шиповника плоды/rozae fructus, крапивы трава/urticae 
+            herba`,
             recommendations: 'по 1 таблетке 2 раза в день за 10 минут до еды',
           },
           {
