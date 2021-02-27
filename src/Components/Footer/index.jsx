@@ -47,7 +47,7 @@ const Footer = () => (
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
           <Typography align={'center'} gutterBottom style={{ color: 'white' }}>
-            Отправка заказов ПН-ПТ, 09:00 - 18:00
+            Отправка заказов ПН-СБ, 09:00 - 18:00
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
