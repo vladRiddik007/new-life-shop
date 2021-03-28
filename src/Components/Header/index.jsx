@@ -6,6 +6,7 @@ import Drawer from '../Drawer'
 import { RouterConfig } from '../Layout/RouterConfig'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import AdaptiveMenu from '../AdaptiveMenu'
+import Search from '../Search'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -28,6 +29,7 @@ export default function Header() {
           <Typography variant="h6" className={classes.title}>
             New Life Shop
           </Typography>
+          <Search />
           {matches ? (
             <div>
               <Link
