@@ -41,22 +41,31 @@ export const SubCategory = ({ categoryName, subcategory, toggleDrawer }) => {
       </ListItem>
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          {subcategory.map((subcategory, i) => (
-            <ListItem
-              onClick={toggleDrawer('left', false)}
-              className={classes.nested}
-              key={i}
-              component={Link}
-              to={{
-                pathname: `/products/${subcategory.subcategoryName}`,
-                state: { products: subcategory.products },
-              }}
-            >
-              <ListItemIcon>
-                <EcoIcon style={{ color: 'green' }} />
-              </ListItemIcon>
-              <ListItemText primary={subcategory.subcategoryName} />
-            </ListItem>
+          {subcategory.map((sub, i) => (
+            <React.Fragment key={i}>
+              {sub.subcategory ? (
+                <SubCategory
+                  categoryName={sub.subcategoryName}
+                  subcategory={sub.subcategory}
+                  toggleDrawer={toggleDrawer}
+                />
+              ) : (
+                <ListItem
+                  onClick={toggleDrawer('left', false)}
+                  className={classes.nested}
+                  component={Link}
+                  to={{
+                    pathname: `/products/${sub.subcategoryName}`,
+                    state: { products: sub.products },
+                  }}
+                >
+                  <ListItemIcon>
+                    <EcoIcon style={{ color: 'green' }} />
+                  </ListItemIcon>
+                  <ListItemText primary={sub.subcategoryName} />
+                </ListItem>
+              )}
+            </React.Fragment>
           ))}
         </List>
       </Collapse>
@@ -82,7 +91,7 @@ const Drawer = () => {
   const list = () => (
     <div className={classes.list} role="presentation">
       <List component="nav">
-        {data.map((category, index) => (
+        {data.map((category) => (
           <React.Fragment key={category.id}>
             {category.subcategory ? (
               <SubCategory
